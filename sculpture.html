@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Website</title>
+    <body>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #030d33;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            background-color: #052383;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            background-color: #283f7d;
+        }
+        .featured-auctions {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        h2{
+            text-align:center;
+            font-style:italic;
+        }
+        img{
+            border: 1px solid #070000;
+            padding:5px; 
+            border-radius: 4px; 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h3{
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <header>
+            <h1><i>BidFlare</i></h1>
+        </header>
+    
+        <nav>
+            <a href="index.html">Home</a>&nbsp;
+            <a href="auctions.html">Auctions</a>&nbsp;
+            <a href="login.html">Login</a>&nbsp;
+            <a href="register.html">Register</a>&nbsp;
+            <a href="faq.html">FAQ</a>&nbsp;
+        </nav>
+    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form>
+            
+                <input type="text" id="input" list="input">
+                <datalist id="input">
+                    <option id="painting" value="Painting"></option>
+                    <option id="sculpture" value="Sclupture"></option>
+                    <option id="sport" value="Sport"></option>
+                    <option id="music" value="Music"></option>
+                    <option id="electronic" value="Electronic"></option>
+                    
+    
+                </datalist>
+            </div>
+            <button type="submit" class="btn" onclick="dosomething()" >Search</button>
+        </form>
+        
+        <a href="auctions.html">Painting</a>&nbsp;
+        <a href="sculptures.html">Sculpture</a> &nbsp;
+        <a href="sculpture.html">Clay Model</a>
+        <a href="auctionpp.html">Music</a>&nbsp;
+        <a href="shoes.html">Shoes</a>&nbsp;
+        <a href="sports.html">Sport</a>&nbsp;
+        <a href="electronics.html">Electronic</a>&nbsp;
+    
+        <div class="featured-auctions">
+            <h2>Featured Auctions</h2>
+            <div class="auction-item">
+                <img src="https://www.mouldindia.in/cdn/shop/products/Madonna_Of_Bruge_Showpiece_Sculpture_390091a1-eb7c-4128-a78d-bff58cfc2347_600x.jpg?v=1571268457">
+                <h3>MICHELANGELO MADDONA OF BRUGES</h3>
+                <p>This artifact/sculpture is an official reproduction of the original work of art. The material (resin and sandstone) and finish has been approved by the foundation of the artist</p>
+                <p>Current Bid: $95.41</p>
+                <button>Bid Now</button>
+           
+            <br>
+            <br>
+    
+            <div class="auction-item">
+                
+                <img src="https://images.squarespace-cdn.com/content/v1/5cd61dfeaadd3455e3ae62b5/1604190008194-AX4DGTFYB32JRJBWLKPM/Spiral+Sculpture-+L+%281%29.jpg?format=1500w">
+                <h3>SPIRAL ART SCULPTURE</h3>
+                <p>abstract spiral sculpture of wires by artist</p>
+                <p>Current Bid: $65.78</p>
+                <button>Bid Now</button>
+             </div>
+            </div>
+            <br>
+            <br>
+               
+                <div class="auction-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4N0qiCZqjgX90qpYF0uW761fV23OlqftouA&amp;usqp=CAU" alt="Auction Item 1">
+                    <h3>Lady Playing Veena</h3>
+                    <p> Celebrating the exemplary Ganikas of ancient India, this acrylic painting of a Lady Playing Veena stunningly presents a woman brimming with youth, beauty, and delicate tunes of the Veena she cradles.</p>
+                    <p>Current Bid: $100</p>
+                    <button>Bid Now</button>
+                </div>
+                <br>
+                <br>
+    
+                
+                    
+                    <div class="auction-item">
+                        <img src="https://stone.hccc.gov.tw/Utility/DisplayImage?id=11068">
+                        <h3></h3>
+                        <p>Type: HD Canvas PrintingMaterial: Polyester CanvasMedium: Waterproof InkTechnique: High-Quality Digital PrintingProperties: Moisture-proof</p>
+                        <p>Current Bid: $100</p>
+                        <button>Bid Now</button>
+                    </div>
+                    <br>
+                    <br>
+    
+                   
+                        
+                        <div class="auction-item">
+                            <img src="data:image/jpeg;base64,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" alt="Auction Item 1">
+                            <h3>Modern Abstract Art Canvas Paintings</h3>
+                            <p>Type: HD Canvas PrintingMaterial: Polyester CanvasMedium: Waterproof InkTechnique: High-Quality Digital PrintingProperties: Moisture-proof</p>
+                            <p>Current Bid: $100</p>
+                            <button>Bid Now</button>
+                        </div>
+                        <br>
+                        <br>
+    
+                       
+                          
+                            
+                            </div>
+                            <br>
+                            <br>
+    
+            <!-- Add more featured auction items as needed -->
+        </div>
+    </header>
+</body>

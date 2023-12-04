@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Website - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+        header {
+            background-color: #030d33;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            background-color: #052383;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            background-color: #283f7d;
+        }
+        .featured-auctions {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        img {
+            width:90%
+        }
+        figcaption{
+            text-align:center;
+            color:rgb(7, 57, 82);
+        }
+        h3{
+            font-style:italic;
+        }
+        marquee{
+            color:red;
+            font-style: italic;
+            background-color:grey;
+        }
+        /* Add more styling as needed */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BidFlare</h1>
+        <nav>
+            <a href="index.html">Home</a>&nbsp;
+            <a href="auctions.html">Auctions</a>&nbsp;
+            <a href="login.html">Login</a>&nbsp;
+            <a href="register.html">Register</a>&nbsp;
+            <a href="faq.html">FAQ</a>&nbsp;
+             
+           <!-- # Add more navigation links as needed  -->
+         </nav>
+        
+    </header>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- <form class="search-form" action="search-results.html" method="GET">
+        <input type="text" name="query" placeholder="Search ">
+        <button type="submit">Search</button>
+    </form> -->
+    <div>
+    <marquee><b>"Nothing will teach you more about perceived value than taking something with literally no value and selling it in the auction format"</b></marquee>
+</div>
+
+    <div>
+        <h3><b>What Is an Auction?</b></h3>
+        <p>An auction is a sales event wherein potential buyers place <b><i>competitive bids</i></b> on assets or services either in an open or closed format. Auctions are popular because buyers and sellers believe they will get a good deal buying or selling assets.</p>
+    </div>
+   
+
+    <div class="featured-auctions">
+        <figure><img src="data:image/jpeg;base64,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"></figure>
+        <figcaption><b>BIDDING</b></figcaption>
+        <!-- # Featured auction items go here -->
+      </div>
+      <br>
+      <div>
+        <h3>KEY TAKEAWAYS
+        <h3>
+        <ul type="circle">
+            <li>An auction is a sale in which buyers compete for an asset by placing bids.</li>
+            <li>Auctions are conducted both live and online.</li>
+            <li>In a closed auction, for example, the sale of a company, bidders are not aware of competing bids.</li>
+            <li>In an open auction, such as a livestock auction, bidders are aware of the other bids.</li>
+        </ul>
+      </div>
+<br>
+<br>
+<br>
+<div>
+<h3>Example of Auctions</h3>
+<p>In an open format, all bidders are aware of the bids submitted. In a closed format, bidders are not aware of other bids. Auctions can be live, or they can be conducted on an <b><i>online platform</i></b>. The asset or service in question is sold to the party that places the highest bid in an open auction and usually to the highest bidder in a closed auction.</p>
+</div>
+
+    <footer>
+        <p>&copy; 2023 Auction Website</p>
+    </footer>
+</body>
+</html>
+
+
